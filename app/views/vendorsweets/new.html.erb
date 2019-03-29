@@ -1,0 +1,8 @@
+<%= form_with(model: @vendorsweet) do |form|%>
+<%= form.label "Sweet"%>
+<%= form.collection_select(:sweet_id, Sweet.all, :id, :name, prompt: true)%>
+
+<%= form.label "Vendor"%>
+<%= form.collection_select(:vendor_id, Vendor.all, :id, :name, prompt: true)%>
+<%= form.submit%>
+<%end%>

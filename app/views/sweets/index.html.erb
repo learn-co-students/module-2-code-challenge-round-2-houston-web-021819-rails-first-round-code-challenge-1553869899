@@ -3,5 +3,6 @@
 <ul>
   <% @sweets.each do |sweet| %>
     <li><%= sweet.name %></li>
+    <%= link_to sweet.name, sweet %>
   <% end  %>
 </ul>
