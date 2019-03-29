@@ -3,5 +3,6 @@
 <ul>
   <% @vendors.each do |vendor| %>
     <li><%= vendor.name %></li>
+    <%= link_to vendor.name, vendor %>
   <% end  %>
 </ul>
